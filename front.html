@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="desgin.css">
+    </head>
+    <script src="pathFind.js"></script>
+    <body>
+        <header id="main-header">PATH FINDER</header>
+    </body>
+    <div id="full-btn-plt">
+        <div id="main-btn-plt">
+            <button id="change-grid-btn" onclick="changeGridSize()">Change Grid Size</button>
+            <button id="set-source-btn" onclick="chooseSource()">Set Source</button>
+            <button id="set-target-btn" onclick="chooseTarget()">Set Target</button>
+            <button id="add-obstacle-btn" onclick="chooseObstacle()">Add Obstacle</button>
+            <button id="reset-grid-btn" onclick="resetGrid()">Reset</button>
+            <button id="go-random-btn" onclick="goRandom()">Go Random</button>
+            <button id="find-path-btn" onclick="findPath()">Find Path</button>
+        </div>
+        <div id="save-btn-plt">
+            <input id="row-range" type="range" min="10" max="30" step="3" value="10" onclick="makeGrid()">
+            <input id="col-range" type="range" min="10" max="30" step="3" value="10" onclick="makeGrid()">
+            <button id="save-size-btn" onclick="saveGridSize()">Save</button>
+        </div>
+    </div>
+    <div id="grid-plt">
+        <table id="clickable-grid"></table>
+    </div>        
+</html>
